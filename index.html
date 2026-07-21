@@ -2,48 +2,53 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href="./index.html">
           <img src="./images/logo.svg" alt="Логотип Сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+          <span class="text-selection">shop bakery</span> — це пекарня, яка
+          взяла все найкраще, і зберегла смак традиційної випічки та
+          натуральність інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span class="text-selection">5 хвилин і замовлення готове</span>. А ще
+          у наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img src="./images/пекар.jpg" alt="Пекар з випічкою" />
       </section>
-      <section>
-        <h2>Наші найкращі кухарі</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -67,8 +72,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="formats-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -87,8 +92,16 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приєднуйся до мережі пекарень</h2>
+      <section id="contacts-section">
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.2667318661543!2d30.5247740757249!3d50.45143598729389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51c2f6031f%3A0x388cedce1bad34c3!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDEsINCa0LjRl9CyLCAwMjAwMA!5e1!3m2!1suk!2sua!4v1784122917664!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -97,8 +110,8 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#">Франшиза</a></li>
           <li><a href="#">Наші традиції</a></li>
+          <li><a href="#">Шеф-кухарі</a></li>
           <li><a href="#">Формати</a></li>
           <li><a href="#">Контакти</a></li>
         </ul>
@@ -108,9 +121,7 @@
           <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
           <li><a href="mailto:info@shopbakery.com">info@shopbakery.com</a></li>
           <li>
-            <a
-              href="https://maps.google.com/?q=м. Київ, вул. Хрещатик, 1"
-              target="_blank"
+            <a href="https://maps.app.goo.gl/nY1DWBJpXpSKPUsh6" target="_blank"
               >м. Київ, вул. Хрещатик, 1
             </a>
           </li>
@@ -121,6 +132,8 @@
             <a href="#"> <!-- Instagram --></a>
           </li>
         </ul>
+        <a href="#" target="_blank">Політика конфіденційності</a>
+        <p>&copy; 2026 Всі права захищені.</p>
       </address>
     </footer>
   </body>
